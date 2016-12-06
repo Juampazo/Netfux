@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_netfux"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#212121"
+    android:background="#1E1E1E"
     android:paddingBottom="10dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
@@ -30,10 +31,29 @@
                 android:textColor="@android:color/white"
                 android:textSize="18sp"/>
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="202dp"
-                android:src="@drawable/pantasha"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v4.widget.SlidingPaneLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="202dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="202dp"
+                        android:src="@drawable/pkmn"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="202dp"
+                        android:src="@drawable/pantasha"/>
+
+                </android.support.v4.widget.SlidingPaneLayout>
+
+            </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,7 +64,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#222222"
+                android:background="#212121"
                 android:weightSum="3"
                 android:orientation="horizontal">
 
@@ -54,11 +74,14 @@
                     android:src="@drawable/ralles"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"/>
+
                 <ImageView
                     android:layout_width="127dp"
                     android:layout_height="181dp"
                     android:src="@drawable/camp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:id="@+id/imageView" />
+
                 <ImageView
                     android:layout_width="127dp"
                     android:layout_height="181dp"
@@ -68,10 +91,17 @@
 
             </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tendencias"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#222222"
+                android:background="#212121"
                 android:orientation="horizontal"
                 android:weightSum="3">
 
@@ -94,6 +124,40 @@
                     android:layout_weight="1"/>
 
               </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mi lista"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#212121"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="181dp"
+                    android:src="@drawable/cerdo"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="181dp"
+                    android:src="@drawable/spidey"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="181dp"
+                    android:src="@drawable/zim"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
