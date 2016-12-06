@@ -1,19 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_netfux"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#212121"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp"
+    android:orientation="vertical"
     tools:context="com.hi_tech.netfux.NETFUX">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textColor="@android:color/holo_red_dark"/>
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Continuar viendo contenido de Juan Pablo"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                android:src="@drawable/pantasha"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Populares en Netfux"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#222222"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="181dp"
+                    android:src="@drawable/ralles"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="181dp"
+                    android:src="@drawable/camp"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="181dp"
+                    android:src="@drawable/cutlu"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#222222"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="181dp"
+                    android:src="@drawable/noche"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="181dp"
+                    android:src="@drawable/tigre"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="181dp"
+                    android:src="@drawable/revol"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"/>
+
+              </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
